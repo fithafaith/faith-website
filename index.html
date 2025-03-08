@@ -43,6 +43,9 @@ nav {
 }
 
 .navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
         list-style-type: none;
         background-color: rgb(44, 43, 43);
         padding: 0px;
@@ -67,7 +70,8 @@ nav {
         background-color: rgb(92, 92, 92)
     }
     .navbar li{
-        float: left;
+        float: none;
+        margin: 5px;
     }
 
 .content {
@@ -113,8 +117,41 @@ nav {
 }
 
 .img-meee {
-    width: 100%;
-    height: 80%;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Stack elements vertically */
+        height: auto;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        overflow: auto;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar li {
+        float: none;
+        width: 100%;
+    }
+
+    .img-meee {
+        height: auto; /* Prevents image distortion */
+    }
+
+    video {
+        width: 100%; /* Makes video responsive */
+        height: auto;
+    }
 }
 
 </style>
