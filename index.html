@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+    gap: 4px;
+    height: calc(100vh - 2px);
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100vw;
+    overflow: auto;
+    margin: 1px;
+    background-color: rgb(120, 120, 120);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px;
+    margin: 1px;
+}
+
+.navbar ul{
+        list-style-type: none;
+        background-color: rgb(44, 43, 43);
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+        flex-grow: 1;
+    }
+    .navbar {
+        margin: 0px;
+        flex-grow: 1;
+    }
+    .navbar a{
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        padding: 15px;
+        display: block;
+        text-align: center;
+        margin: 0px;
+    }
+    .navbar a:hover{
+        background-color: rgb(92, 92, 92)
+    }
+    .navbar li{
+        float: left;
+    }
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    overflow: hidden;
+}
+.cont {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.textcont {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    margin: 4px;
+    flex-grow: 1;
+}
+.text {
+    text-align: center;
+}
+.textcont ul{
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+       background-color:  rgb(44, 43, 43);
+    }
+.textcont a{
+        color:white;
+        text-decoration: none;
+        padding: 15px;
+        display: block;
+        text-align: center;
+        margin: 0px;
+    }
+
+.textcont a:hover{
+        background-color: rgb(115, 54, 33);
+}
+
+.img-meee {
+    width: 100%;
+    height: 80%;
+}
+
+</style>
+<body>
+    <div class="container">
+    <nav>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </nav>
+    <div class="content">
+        <img src="img/me.jpg" alt="Faith's Home Page">
+    <div class="cont">
+    <div class="textcont">
+        <div class="text"><h1>Welcome to Faith's Home page!</h1></div>
+        <ul><li><a href="ult.html"><h2>Press here to know about Faith's Ultimate Hobby</h2></a></li></ul>
+        <video controls src="vid/pixel1.mp4" autoplay muted loop width="95%" height="50%"></video> 
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

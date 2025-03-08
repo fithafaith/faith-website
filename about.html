@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+    gap: 4px;
+    height: calc(100vh - 2px);
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100vw;
+    overflow: auto;
+    margin: 1px;
+    background-color: rgb(120, 120, 120);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px;
+    margin: 1px;
+}
+
+.navbar ul{
+        list-style-type: none;
+        background-color: rgb(44, 43, 43);
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+        flex-grow: 1;
+    }
+    .navbar {
+        margin: 0px;
+        flex-grow: 1;
+    }
+    .navbar a{
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        padding: 15px;
+        display: block;
+        text-align: center;
+        margin: 0px;
+    }
+    .navbar a:hover{
+        background-color: rgb(92, 92, 92)
+    }
+    .navbar li{
+        float: left;
+    }
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.textcont {
+    display: flex;
+    flex-direction: column;
+    margin: 4px;
+    padding: 4px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.textcont ul{
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+        flex-grow: 1;
+    }
+
+.img-meee {
+    width: 100%;
+    height: 80%;
+}
+.text {
+    color: white;
+    padding: 6px;
+    border-radius: 10px;
+    background-color: rgb(78, 76, 76);
+}
+.cont {
+    padding: 4px;
+    margin: 4px;
+    text-align: justify;
+}
+.cont2 {
+    height: 13%;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(44, 43, 43);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+</style>
+<body>
+    <div class="container">
+    <nav>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </nav>
+    <div class="content">
+        <img src="img/school.jpg" alt="Faith's Home Page">
+    <div class="textcont"><h1>Welcome to Faith's About page!</h1>
+    <div class="text"><h3>
+       <h2>Hi, I'm Faith! 👋
+        Welcome to my little corner of the internet!</h2> <br>
+        <div class="cont">I’m Faith, an 18-year-old who loves exploring creativity, technology, and self-improvement. Whether I’m learning how to code, listening to music, or just enjoying simple moments, I believe in making every day meaningful.
+        <br>
+           <br><h2>Who Am I?</h2><br>I’m the youngest of six siblings, which means I’ve grown up in a lively, loving, and sometimes chaotic household. Being the youngest has taught me a lot—patience, resilience, and, most importantly, how to learn from the experiences of those around me.
+            
+            I love learning new things and challenging myself, whether it’s through coding, reading, or trying something creative. Right now, I'm diving into the world of HTML and C programming, hoping to build exciting projects and improve my skills. My dream is to develop something that reflects my passion for both creativity and technology.
+            
+            <br><br><h2>Why did I Create This Website?</h2> <br>
+            This is an individual project in IT Era where I am able to create my personal space and share my thoughts, experiences, and projects. It’s a reflection of who I am and the things I’m passionate about.
+            
+           <br><br> Here, you’ll find:<br>
+            🌟 My journey in learning to code and improving my skills
+            <br>🌟 My thoughts on life, creativity, and personal growth
+            <br>🌟 Random fun things that make me happy<br>
+            
+    </h3>
+</div>
+</div>
+<div class="cont2">
+    <br><h3>Whether you’re here to learn something, connect with me, or just explore, I hope you find something interesting!</h3>
+</div>
+</div>
+    </div>
+</body>
+</html>

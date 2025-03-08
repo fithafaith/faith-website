@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+    gap: 4px;
+    height: calc(100vh - 2px);
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100vw;
+    overflow: auto;
+    margin: 1px;
+    background-color:rgb(183, 134, 99);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px;
+    margin: 1px;
+}
+
+.navbar ul{
+        list-style-type: none;
+        background-color: rgb(122, 79, 45);
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+        flex-grow: 1;
+    }
+    .navbar {
+        margin: 0px;
+        flex-grow: 1;
+    }
+    .navbar a{
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        padding: 15px;
+        display: block;
+        text-align: center;
+        margin: 0px;
+    }
+    .navbar a:hover{
+        background-color:   rgb(115, 54, 33);
+    }
+    .navbar li{
+        float: left;
+    }
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    overflow: hidden;
+}
+.cont {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.textcont {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    margin: 4px;
+    flex-grow: 1;
+}
+.text {
+    text-align: center;
+    color: black;
+}
+.textcont ul{
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+        background-color:  rgb(122, 79, 45);
+        border-radius: 20px;
+    }
+.textcont a{
+        color:white;
+        text-decoration: none;
+        padding: 4px;
+        display: block;
+        text-align: center;
+        margin: 0px;
+    }
+
+.textcont a:hover{
+        background-color: rgb(115, 54, 33);
+}
+.text1 {
+    text-align: center;
+    color: white;
+    background-color: rgb(122, 79, 45);
+    border-radius: 20px;
+}
+.text2 {
+    text-align: center;
+    color: white;
+    background-color: rgb(74, 46, 25);
+    border-radius: 15px;
+    margin: 4px;
+    padding: 4px;
+}
+.text3 {
+    text-align: left;
+    padding: 4px;
+}
+.img-meee {
+    width: 100%;
+    height: 80%;
+}
+
+</style>
+<body>
+    <div class="container">
+    <nav>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </nav>
+    <div class="content">
+        <img src="img/writing.jpg" alt="Faith's Home Page">
+    <div class="cont">
+    <div class="textcont">
+        <div class="text"><h1>My Ultimate Hobby is Writing Songs and Poetries</h1></div>
+        <div class="text1"><ul><li><a href="poetry.html"><h2>Press here to know more why writing Poetry is fun for me!</h2></a></li></ul></div>
+        <div class="text2"><h1>Why do I like to write Poetries?</h1>
+        <div class="text3">
+            <p>Writing has become my escape, to a world where there is no judgement and I could write the most ridiculous and ironic sentences ever and I would still be understood.
+            It became my medium of release, whenever my thoughts gets too overwhelming for me, I can just let myself drown in the words I've written.
+            I can write a tale of an adventurous journey of a character who braved the unknown. And I can let myself be transparent and vulnerable.
+            Writing provides a void space for me, where I can reflect and know myself some more. It also allows me to explore and challenge my creativity.<br>
+            When I write, I do not just write simple words, but I take my heart out and feel my soul. I close my eyes and I try to feel what the right words are,
+            I  devote my entirety when I write. I let myself be honest and weak, in writing I can fall, and drown, and break and I'd find comfort in that.
+            Because sometimes, accepting that I am suffering and hurting is comforting for me, so I can release the pain I'm feeling through the words and just let the pen bleed ink.
+            Additionally, in this alternate world, I can shapeshift into anything I want to be. I can be as imaginative or bland, be a hero or the villian.
+            Furthermore, writing allows me to regulate my emotions and gather my thoughts, it gives me the satisfaction that I need and it's just pure bliss for me.
+            It's a field where I reign, a place where there is no losing. 
+            </p>
+        </div>
+    </div>
+    <video controls src="vid/poetry.mp4" autoplay muted loop width="100%" height="50%"></video> 
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+    gap: 4px;
+    height: calc(100vh - 2px);
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100vw;
+    overflow: auto;
+    margin: 1px;
+    background-color:rgb(183, 134, 99);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px;
+    margin: 1px;
+}
+
+.navbar ul{
+        list-style-type: none;
+        background-color: rgb(122, 79, 45);
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+        flex-grow: 1;
+    }
+    .navbar {
+        margin: 0px;
+        flex-grow: 1;
+    }
+    .navbar a{
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        padding: 15px;
+        display: block;
+        text-align: center;
+        margin: 0px;
+    }
+    .navbar a:hover{
+        background-color:   rgb(115, 54, 33);
+    }
+    .navbar li{
+        float: left;
+    }
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    overflow: hidden;
+}
+.cont {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.textcont {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    margin: 4px;
+    flex-grow: 1;
+}
+.text {
+    text-align: center;
+    color: black;
+}
+.textcont ul{
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+        background-color:  rgb(122, 79, 45);
+        border-radius: 20px;
+    }
+.textcont a{
+        color:white;
+        text-decoration: none;
+        padding: 4px;
+        display: block;
+        text-align: center;
+        margin: 0px;
+    }
+
+.textcont a:hover{
+        background-color: rgb(115, 54, 33);
+}
+.text1 {
+    text-align: center;
+    color: white;
+    background-color: rgb(122, 79, 45);
+    border-radius: 20px;
+}
+.text2 {
+    text-align: center;
+    color: white;
+    background-color: rgb(74, 46, 25);
+    border-radius: 15px;
+    margin: 4px;
+    padding: 4px;
+}
+.text3 {
+    text-align: left;
+    padding: 4px;
+}
+.img-meee {
+    width: 100%;
+    height: 80%;
+}
+.cont {
+    width: 100%; 
+    height: 460px; 
+    padding: 4px;
+    margin: 4px;
+    text-align: justify;
+}
+.scrollable {
+            width: 100%; 
+            height: 100%; 
+            padding: 10px;
+            overflow: auto; 
+        }
+
+</style>
+<body>
+    <div class="container">
+    <nav>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </nav>
+    <div class="content">
+        <img src="img/music.jpg" alt="Faith's Home Page">
+    <div class="cont">
+    <div class="textcont">
+        <div class="text"><h1>My Ultimate Hobby is Writing Songs and Poetries</h1></div>
+        <div class="text2"><h1>Why do I like Music?</h1>
+        <div class="cont">
+            <div class="scrollable">
+            <p>Music has always been a big part of my life. Whether I’m in a good mood, feeling down, or just existing in the moment, there’s always a song that fits exactly how I feel.<br><br> I like music because it’s more than just a sound—it’s something that connects with me in ways that words alone can’t.
+
+            One of the reasons I love music is that it makes everything feel more alive. A simple melody can turn an ordinary day into something special. When I’m happy, music makes the moment even better. When I’m sad, it gives me comfort, like a friend who understands what I'm feeling without needing to say anything. There’s a song for every situation, and that’s what makes music so powerful.<br><br>
+            
+            I also love how music can tell stories. Just like books or movies, a song can take me somewhere else, even if it’s only for a few minutes. Sometimes, I hear a song and feel like it was written just for me—like the artist somehow knew exactly what I was thinking. It’s crazy how a few lyrics and chords can create something that resonates so deeply within me.
+            
+            Music also inspires me, especially as someone who likes to write songs. The way different artists mix words, melodies, and emotions into something meaningful makes me want to do the same. I find myself paying attention to the smallest details—how a chorus builds up, how certain lyrics hit harder, how melodies flow. It’s a never-ending source of creativity.
+            
+            But at the end of the day, I don’t love music because of how it’s made or how technically good it is. I love it because of how it makes me feel. Music has a way of turning emotions into something tangible, something that can be heard and felt at the same time. And that’s why, no matter where life takes me, I know music will always be a part of it.</p>
+        </div>  
+        </div>    
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

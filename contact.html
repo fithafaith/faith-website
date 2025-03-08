@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faith's Contact Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, sans-serif;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: url(img/lai.jpg);
+            background-size: contain;
+            min-height: 100vh;
+            color: white;
+        }
+
+        .container {
+            width: 80%;
+            background-color: rgb(120, 120, 120);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            background-color: rgb(44, 43, 43);
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar li {
+            margin: 0 10px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            border-radius: 50px;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(92, 92, 92);
+        }
+
+        .social-icons i {
+            font-size: 40px;
+            margin: 10px;
+            color: white;
+        }
+        .social-icons i:hover {
+            background-color: black;
+            border-radius: 5px;
+        }
+        .feedback-section {
+            margin-top: 20px;
+        }
+
+        .box-container {
+            display: none;
+            background: #444;
+            box-shadow: 0 5px 15px #111;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 10px;
+        }
+
+        .box {
+            height: 100px;
+            background: #f8f8f8;
+            padding: 10px;
+            overflow-y: auto;
+            text-align: left;
+            border-radius: 5px;
+            color: black;
+        }
+
+        #input {
+            width: 100%;
+            padding: 10px;
+            font-size: 15px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: black;
+            color: white;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+        .sud {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .sudtext{
+            font-size: 35px;
+        }
+        h1 {
+            text-shadow: 4px 1px 5px black;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <h1>Welcome to Faith's Contact Page!</h1>
+        <div class="social-icons">
+            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fhtiafaith__%3Figsh%3DMXA5d3d6OG40dHVydA%253D%253D%26utm_source%3Dqr%26fbclid%3DIwZXh0bgNhZW0CMTAAAR2H8uO71tJRE6UwgiWmwebyNuwt1NhTvfkYpFeGWz09_4EHFkoT5wsiB14_aem_pedU2fa_bk_EgKctUCHzKg&h=AT1NotMvhllgyXOnrDl65omiPM5nD3b09nyMPozAg62PTDw-fAncE6uuPpvxQvAY5tial0twztAIqjDmnztsgJ1TWG1zVg34GfPj3oHnFMMNuqWXAxWaKz8ye6N5boCwp8uxfw"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.facebook.com/share/19zfYVPaxk/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fopen.spotify.com%2Fplaylist%2F0m6HS7P2aL1TdY86uscoTt%3Fsi%3DL8w9kU69TjGjDwnHAk1Whg%26pi%3DjHxjHO2gSlq10%26fbclid%3DIwZXh0bgNhZW0CMTAAAR38FUNQ-2cnnznJkj9-YgnYV_eZKeA3d5keVURusxLxR-axI5clrx2yfok_aem_eSWVcCyM-jDUvgaF2T9HPA&h=AT1NotMvhllgyXOnrDl65omiPM5nD3b09nyMPozAg62PTDw-fAncE6uuPpvxQvAY5tial0twztAIqjDmnztsgJ1TWG1zVg34GfPj3oHnFMMNuqWXAxWaKz8ye6N5boCwp8uxfw"><i class="fa-brands fa-spotify"></i></a>
+            <div class="sud">
+                <i class="fa-solid fa-phone"></i><div class="sudtext">09912476321</div>
+                <i class="fa-solid fa-envelope"></i><div class="sudtext">senilloangelafaith@gmail.com</div></div>
+            </div>
+        </div>
+
+        <div class="feedback-section">
+            <h1>Kindly provide a feedback, thank you!</h1>
+            <textarea id="input" placeholder="Write your feedback here..." rows="4"></textarea>
+            <button id="cancel">Cancel</button>
+            <button id="comment">Comment</button>
+
+            <div class="box-container">
+                <div class="box"></div>
+                <button id="delete">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+    $('#comment').click(function(){
+        var input = $('#input').val();
+        if (input.trim() !== "") {
+            var formattedInput = input.replace(/\n/g, '<br>'); // Convert newlines to <br>
+            $('.box').append('<p>' + formattedInput + '</p>');
+            $('#input').val('');
+            $('.box-container').slideDown();
+        }
+    });
+    
+    $('#cancel').click(function() {
+        $('#input').val('');
+    });
+    
+    $('#delete').click(function() {
+        $('.box').html(''); // Use .html('') instead of .text('') to clear formatted content
+        $('.box-container').slideUp();
+    });
+});
+    </script>
+</body>
+</html>
