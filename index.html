@@ -124,37 +124,35 @@ nav {
 @media (max-width: 768px) {
     body {
         flex-direction: column; /* Stack elements vertically */
-        align-items: center; /* Center content */
-        height: auto; /* Allow scrolling */
+        height: auto;
     }
 
     .content {
         flex-direction: column;
         align-items: center;
-        text-align: center; /* Center text on smaller screens */
-        width: 100%;
+        overflow: auto;
     }
 
     .navbar ul {
-        flex-direction: column; /* Stack navbar items */
-        align-items: center;
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 
     .navbar li {
+        float: none;
         width: 100%;
     }
 
-    .textcont {
-        width: 90%; /* Prevent content from stretching too wide */
+    .img-meee {
+        height: auto;
     }
 
-    img, video {
-        max-width: 100%;
+    video {
+        width: 100%;
         height: auto;
     }
 }
-
 
 </style>
 <body>

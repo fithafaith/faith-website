@@ -166,7 +166,7 @@
     $('#comment').click(function(){
         var input = $('#input').val();
         if (input.trim() !== "") {
-            var formattedInput = input.replace(/\n/g, '<br>'); // Convert newlines to <br>
+            var formattedInput = input.replace(/\n/g, '<br>');
             $('.box').append('<p>' + formattedInput + '</p>');
             $('#input').val('');
             $('.box-container').slideDown();
@@ -178,7 +178,7 @@
     });
     
     $('#delete').click(function() {
-        $('.box').html(''); // Use .html('') instead of .text('') to clear formatted content
+        $('.box').html('');
         $('.box-container').slideUp();
     });
 });
