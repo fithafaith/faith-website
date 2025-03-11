@@ -148,37 +148,38 @@ nav {
             overflow: auto; 
         }
         @media (max-width: 768px) {
-            body {
-                flex-direction: column;
-                height: auto;
-            }
-    
-            .content {
-                flex-direction: column;
-                align-items: center;
-                overflow: auto;
-            }
-    
-            .navbar ul {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-            }
-    
-            .navbar li {
-                float: none;
-                width: 100%;
-            }
-    
-            .img-meee {
-                height: auto;
-            }
-    
-            video {
-                width: 100%;
-                height: auto;
-            }
-        }
+    body {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        overflow: auto;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .navbar li {
+        width: 100%;
+    }
+
+    .img-meee, video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .scrollable {
+        max-height: 400px; 
+        overflow-y: auto;  
+    }
+}
 
 </style>
 <body>
