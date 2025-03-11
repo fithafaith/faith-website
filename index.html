@@ -122,36 +122,38 @@ nav {
 }
 
 @media (max-width: 768px) {
-    body {
-        flex-direction: column; /* Stack elements vertically */
-        height: auto;
-    }
-
-    .content {
-        flex-direction: column;
-        align-items: center;
-        overflow: auto;
-    }
-
-    .navbar ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .navbar li {
-        float: none;
-        width: 100%;
-    }
-
-    .img-meee {
-        height: auto;
-    }
-
-    video {
-        width: 100%;
-        height: auto;
-    }
+    @media (max-width: 768px) {
+            body {
+                flex-direction: column; /* Stack elements vertically */
+                height: auto;
+            }
+    
+            .content {
+                flex-direction: column;
+                align-items: center;
+                overflow: auto;
+            }
+    
+            .navbar ul {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+    
+            .navbar li {
+                float: none;
+                width: 100%;
+            }
+    
+            .img-meee {
+                height: auto;
+            }
+    
+            video {
+                width: 100%;
+                height: auto;
+            }
+        }
 }
 
 </style>
@@ -172,7 +174,24 @@ nav {
     <div class="textcont">
         <div class="text"><h1>Welcome to Faith's Home page!</h1></div>
         <ul><li><a href="ult.html"><h2>Press here to know about Faith's Ultimate Hobby</h2></a></li></ul>
-        <video controls src="vid/pixel1.mp4" autoplay muted loop width="95%" height="50%"></video> 
+        <video controls src="vid/pixel1.mp4" autoplay muted loop width="90%" height="40%"></video>
+        <script>
+        // Visitor Counter using localStorage
+        if (localStorage.getItem("visitCount") === null) {
+            localStorage.setItem("visitCount", 1);
+        } else {
+            let count = parseInt(localStorage.getItem("visitCount"));
+            localStorage.setItem("visitCount", count + 1);
+        }
+    </script>
+    
+    <div class="visitor-counter" style="text-align: center; font-size: 18px; color: white; margin-top: 10px; padding: 10px; background-color: rgb(44, 43, 43); border-radius: 10px;">
+        Visitors: <span id="visitorCount">0</span>
+    </div>
+    
+    <script>
+        document.getElementById("visitorCount").innerText = localStorage.getItem("visitCount");
+    </script> 
     </div>
     </div>
     </div>

@@ -122,6 +122,38 @@ nav {
     padding: 10px;
     margin: 10px;
 }
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        overflow: auto;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar li {
+        float: none;
+        width: 100%;
+    }
+
+    .img-meee {
+        height: auto;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+}
 </style>
 <body>
     <div class="container">
